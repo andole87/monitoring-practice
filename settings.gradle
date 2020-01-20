@@ -1,0 +1,4 @@
+rootProject.name = 'monitoring-practice'
+
+include 'admin'
+include 'client'
