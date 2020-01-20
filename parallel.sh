@@ -1,2 +1,2 @@
 #!/bin/sh
-./gradlew --parallel admin:bootRun client:bootRun
+./gradlew --parallel admin:bootRun monitoring-target:bootRun

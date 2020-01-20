@@ -1,11 +1,11 @@
-package monitoring.client;
+package monitoring.target;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClientApplication {
+public class TargetApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class);
+        SpringApplication.run(TargetApplication.class);
     }
 }
