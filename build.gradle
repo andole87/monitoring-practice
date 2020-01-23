@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.2.0.RELEASE'
+		springBootVersion = '2.2.3.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -9,6 +9,15 @@ buildscript {
 		classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
 		classpath "io.spring.gradle:dependency-management-plugin:1.0.8.RELEASE"
 	}
+}
+
+plugins {
+	id "com.avast.gradle.docker-compose" version "0.10.7"
+}
+
+dockerCompose {
+	useComposeFiles = ['docker/docker-compose.yml']
+	waitForTcpPorts = false
 }
 
 subprojects {
