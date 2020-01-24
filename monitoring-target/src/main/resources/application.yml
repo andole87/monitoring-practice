@@ -1,0 +1,24 @@
+spring:
+  boot.admin.client:
+    url: http://localhost:8080
+    auto-registration: true
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:33306/simple_board?serverTimezone=UTC
+    username: root
+    password: password
+
+  jpa:
+    properties.hibernate:
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      dialect.storage_engine: innodb
+
+    hibernate.ddl-auto: create
+
+management:
+  endpoints.web.exposure.include: "*"
+  endpoint.health.show-details: always
+

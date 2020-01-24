@@ -3,7 +3,7 @@
 
 ## 실행
 
-`./gradlew start`
+`./gradlew start &`
 
 [http://localhost:8000](http://localhost:8000)
 
